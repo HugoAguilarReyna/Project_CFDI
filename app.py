@@ -1163,7 +1163,8 @@ elif selected_module == "Riesgos":
                     risk_display,
                     use_container_width=True,
                     column_config={
-                        "risk_score": st.column_config.ProgressColumn("Risk Index", format="%.0f", min_value=0, max_value=100, color="red"),
+                        # "risk_score": st.column_config.ProgressColumn("Risk Index", format="%.0f", min_value=0, max_value=100, color="red"),
+                        "risk_score": st.column_config.ProgressColumn("Risk Index", format="%.0f", min_value=0, max_value=100),
                         "total_sum": st.column_config.NumberColumn("Total Operado", format="$%,.2f")
                     }
                 )
