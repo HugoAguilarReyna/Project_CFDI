@@ -1,0 +1,8 @@
+Acceso Administrador (Ve todos los módulos)
+ID EMPRESA: TENANT_001
+USUARIO: admin
+CONTRASEÑA: admin123
+Acceso Limitado (Solo ve KPIs y Riesgos)
+ID EMPRESA: TENANT_001
+USUARIO: user01
+CONTRASEÑA: user123
