@@ -1163,7 +1163,12 @@ elif selected_module == "Riesgos":
                     risk_display,
                     use_container_width=True,
                     column_config={
-                        "risk_score": st.column_config.ProgressColumn("Risk Index", format="%.0f", min_value=0, max_value=100, color="#f85149"),
+                        "risk_score": st.column_config.BarChartColumn(  # <--- CAMBIO AQUÍ
+                            "Risk Index", 
+                            y_min=0,      # Nota: BarChart usa y_min, no min_value
+                            y_max=100,    # Nota: BarChart usa y_max, no max_value
+                            color="#f85149" 
+                        ),
                         "total_sum": st.column_config.NumberColumn("Total Operado", format="$%,.2f")
                     }
                 )
